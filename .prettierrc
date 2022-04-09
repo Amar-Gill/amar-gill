@@ -16,5 +16,6 @@
   "useTabs": false,
   "vueIndentScriptAndStyle": false,
   "bracketSameLine": true,
-  "endOfLine": "auto"
+  "endOfLine": "auto",
+  "tailwindConfig": "./tailwind.config.js"
 }
