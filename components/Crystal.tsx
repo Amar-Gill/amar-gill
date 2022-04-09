@@ -7,8 +7,8 @@ export default function Crystal() {
   useFrame((state, delta) => (mesh.current.rotation.y += 0.01));
   return (
     <mesh ref={mesh}>
-      <boxGeometry />
-      <meshStandardMaterial />
+      <icosahedronGeometry args={[2]} />
+      <meshStandardMaterial color='#9bc2c4' />
     </mesh>
   );
 }
