@@ -4,6 +4,9 @@
     "rules": {
       "import/prefer-default-export": "off",
       "no-console": "warn",
-      "no-var": "error"
+      "no-var": "error",
+      "prettier/prettier": "error",
+      "simple-import-sort/imports": "error",
+      "simple-import-sort/exports": "error"
     }
   }
