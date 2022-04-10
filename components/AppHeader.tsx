@@ -19,16 +19,15 @@ export default function AppHeader() {
       </div>
       <div className='grid grid-cols-2 font-bold'>
         <div>
-          <h1 className=' text-5xl'>Amar S.Gill</h1>
-          <h1 className=' text-4xl'>Software Engineer</h1>
+          <h1 className=' text-5xl'>Amar S. Gill</h1>
+          <h1 className=' text-2xl'>Software Engineer</h1>
         </div>
         <div className='text-right'>
           <Image
             src={photo}
             width='172px'
             height='172px'
-            className='rounded-3xl mx-auto'
-            layout='fixed'
+            className='rounded-3xl !border !border-slate-300 !border-solid'
           />
         </div>
       </div>
