@@ -28,6 +28,8 @@ export default function AppHeader() {
             width='172px'
             height='172px'
             className='rounded-3xl !border !border-slate-300 !border-solid'
+            alt='Profile Picture'
+            title="That's me! And some dorky human."
           />
         </div>
       </div>
