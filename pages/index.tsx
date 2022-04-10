@@ -4,8 +4,10 @@ export default function Home() {
   return (
     <>
       <AppHeader />
-      <p>TODO</p>
-      <p>bio goes here</p>
+      <div className='card'>
+        <p>TODO</p>
+        <p>bio goes here</p>
+      </div>
     </>
   );
 }

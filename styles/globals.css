@@ -5,5 +5,14 @@
 @layer base {
   body {
     @apply bg-slate-800;
+    @apply text-amber-100;
+  }
+}
+
+@layer components {
+  .card {
+    background-color: theme('colors.slate.600');
+    border-radius: theme('borderRadius.lg');
+    padding: theme('spacing.4');
   }
 }
