@@ -4,7 +4,7 @@ import Crystal from './Crystal';
 
 export default function AppHeader() {
   return (
-    <header className='bg-slate-800 pb-8'>
+    <header className='pb-8'>
       <div className='w-56 h-56 mx-auto'>
         <Canvas>
           <ambientLight intensity={0.1} />
