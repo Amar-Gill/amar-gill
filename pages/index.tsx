@@ -1,10 +1,32 @@
+import Image from 'next/image';
+
 import AppHeader from '../components/AppHeader';
+import photo from '../public/photo.jpg';
 
 export default function Home() {
   return (
     <>
       <AppHeader />
       <div className='gap-y-4 grid grid-cols-1'>
+        <div className='card text-lg text-center'>
+          Hello, I&apos;m a full-stack developer based out of Toronto!
+        </div>
+        <div className='grid grid-cols-2 font-bold'>
+          <div>
+            <h1 className='text-5xl'>Amar S. Gill</h1>
+            <h1 className='text-2xl'>Software Engineer</h1>
+          </div>
+          <div className='text-right'>
+            <Image
+              src={photo}
+              width='172px'
+              height='172px'
+              className='rounded-3xl !border !border-slate-300 !border-solid'
+              alt='Profile Picture'
+              title="That's me! And some dorky human."
+            />
+          </div>
+        </div>
         <div className='card'>
           <h1 className='border-amber-100 mb-2 text-xl border-b border-solid'>
             Bio

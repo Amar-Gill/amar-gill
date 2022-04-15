@@ -1,8 +1,6 @@
 import { Canvas } from '@react-three/fiber';
-import Image from 'next/image';
 
 import Crystal from './Crystal';
-import photo from '../public/photo.jpg';
 
 export default function AppHeader() {
   return (
@@ -13,25 +11,6 @@ export default function AppHeader() {
           <directionalLight color='white' position={[-2, 4, 6]} />
           <Crystal />
         </Canvas>
-      </div>
-      <div className='card mb-8 text-center'>
-        Hello, I'm a full-stack developer based out of Toronto!
-      </div>
-      <div className='grid grid-cols-2 font-bold'>
-        <div>
-          <h1 className='text-5xl'>Amar S. Gill</h1>
-          <h1 className='text-2xl'>Software Engineer</h1>
-        </div>
-        <div className='text-right'>
-          <Image
-            src={photo}
-            width='172px'
-            height='172px'
-            className='rounded-3xl !border !border-slate-300 !border-solid'
-            alt='Profile Picture'
-            title="That's me! And some dorky human."
-          />
-        </div>
       </div>
     </header>
   );
