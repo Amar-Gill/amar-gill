@@ -6,9 +6,9 @@
   body {
     @apply bg-slate-800;
     @apply text-amber-100;
+    @apply mb-12;
   }
 }
-
 @layer components {
   .card {
     background-color: theme('colors.slate.600');
