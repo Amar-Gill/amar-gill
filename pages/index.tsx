@@ -28,8 +28,20 @@ export default function Home() {
           <h1 className='border-amber-100 mb-3 text-xl border-b border-solid'>
             Work Experience
           </h1>
-          <p>TODO</p>
-          <p>TODO</p>
+          <div className='grid-cols-fit-3 grid content-start gap-4'>
+            <div className='font-black'>2020</div>
+            <div>Clearco (formerly Clearbanc)</div>
+            <div>Software Engineer</div>
+            <div className='font-black'>2017</div>
+            <div>Morrison Hershfield</div>
+            <div>Building Science Consultant</div>
+            <div className='font-black'>2016</div>
+            <div>Voith Hydro</div>
+            <div>Project Coordinator</div>
+            <div className='font-black'>2014</div>
+            <div>Ontario Power Generation</div>
+            <div>Nuclear Engineering Intern</div>
+          </div>
         </div>
       </div>
     </>
