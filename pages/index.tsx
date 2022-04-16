@@ -5,15 +5,15 @@ import photo from '../public/photo.jpg';
 export default function Home() {
   return (
     <div className='gap-y-4 grid grid-cols-1'>
-      <div className='card mb-4 text-lg text-center'>
+      <div className='card sm:text-lg mb-4 text-center'>
         Hello, I&apos;m a full-stack developer based out of Toronto!
       </div>
-      <div className='grid grid-cols-2 font-bold'>
-        <div>
+      <div className='sm:grid-cols-2 grid grid-cols-1 gap-4 font-bold'>
+        <div className='sm:text-left text-center'>
           <h1 className='text-5xl'>Amar S. Gill</h1>
           <h1 className='text-2xl'>Software Engineer</h1>
         </div>
-        <div className='text-right'>
+        <div className=' sm:text-right text-center'>
           <Image
             src={photo}
             width='172px'
