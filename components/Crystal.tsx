@@ -8,8 +8,6 @@ export default function Crystal() {
   useFrame((_state, _delta) => (mesh.current.rotation.y += 0.01));
 
   return (
-    // @ts-ignore
-    // TODO - fix build error
     <mesh ref={mesh}>
       <icosahedronGeometry args={[2]} />
       <meshStandardMaterial color='#9bc2c4' />
