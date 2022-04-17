@@ -15,7 +15,7 @@ function MainLayout({ children }: { children: React.ReactNode }) {
 
 function AppNav() {
   return (
-    <nav className='flex content-center justify-between max-w-3xl px-5 py-3 mx-auto'>
+    <nav className='flex justify-between max-w-3xl px-5 py-3 mx-auto'>
       <Link passHref href='https://github.com/Amar-Gill/amar-gill'>
         <a target='_blank' className='flex items-center'>
           <GoMarkGithub className='inline' size={20} />
