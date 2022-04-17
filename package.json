@@ -9,6 +9,7 @@
   "dependencies": {
     "@react-three/fiber": "^8.0.11",
     "next": "latest",
+    "next-themes": "^0.1.1",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "react-is": "^18.0.0",
