@@ -1,5 +1,6 @@
 import { useTheme } from 'next-themes';
 import { useState, useEffect } from 'react';
+import { HiSun, HiMoon } from 'react-icons/hi';
 
 export default function ThemeChanger() {
   const [mounted, setMounted] = useState(false);
@@ -20,7 +21,17 @@ export default function ThemeChanger() {
 
   return (
     <div>
-      <button onClick={changeTheme}>CHANGE THEME</button>
+      <button
+        className='dark:bg-amber-200 p-1 bg-indigo-600 rounded'
+        onClick={changeTheme}>
+        {theme === 'dark' ? (
+          // slate-800
+          <HiSun color='rgb(30 41 59 / var(--tw-bg-opacity)' size={30} />
+        ) : (
+          // amber-100
+          <HiMoon color='rgb(254 243 199 / var(--tw-text-opacity)' size={30} />
+        )}
+      </button>
     </div>
   );
 }
