@@ -3,16 +3,25 @@
 @tailwind utilities;
 
 @layer base {
+  :root {
+    @apply bg-amber-100 text-slate-800;
+  }
+
+  .dark {
+    @apply bg-slate-800 text-amber-100;
+  }
+
   body {
-    @apply bg-slate-800;
-    @apply text-amber-100;
     @apply mb-12;
   }
 }
+
 @layer components {
   .card {
-    background-color: theme('colors.slate.600');
-    border-radius: theme('borderRadius.lg');
-    padding: theme('spacing.4');
+    @apply bg-amber-50 p-4 rounded-lg;
+  }
+
+  .dark .card {
+    @apply bg-slate-600;
   }
 }
