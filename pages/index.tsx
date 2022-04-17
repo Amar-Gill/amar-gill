@@ -18,14 +18,14 @@ export default function Home() {
             src={photo}
             width='172px'
             height='172px'
-            className='rounded-3xl !border !border-slate-300 !border-solid'
+            className='rounded-3xl !border !border-slate-800 dark:!border-slate-300 !border-solid'
             alt='Profile Picture'
             title="That's me! And some dorky human."
           />
         </div>
       </div>
       <div className='card'>
-        <h1 className='border-amber-100 mb-2 text-xl border-b border-solid'>
+        <h1 className='dark:border-amber-100 border-slate-800 mb-2 text-xl border-b border-solid'>
           Bio
         </h1>
         <p className='mb-2'>
@@ -44,7 +44,7 @@ export default function Home() {
         </p>
       </div>
       <div className='card'>
-        <h1 className='border-amber-100 mb-3 text-xl border-b border-solid'>
+        <h1 className='border-slate-800 dark:border-amber-100 mb-3 text-xl border-b border-solid'>
           Work Experience
         </h1>
         <div className='grid-cols-fit-3 grid content-start gap-4'>
