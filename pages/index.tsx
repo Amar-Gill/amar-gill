@@ -44,15 +44,15 @@ export default function Home() {
         <p className='mb-2'>
           I grew up in Toronto, Ontario. Being born to immigrant parents, I
           understood the value of hard work. I earned a Civil Engineering and
-          Management degree from McMaster Unversity, and have over 4 years of
+          Management degree from McMaster University, and have over 4 years of
           experience in the Architecure, Engineering and Construction (AEC)
           industry.
         </p>
         <p>
           My interest in programming led me to switch careers into software
           engineering in 2019. I quit my job as a consultant to attend a
-          full-stack development bootcamp in Malaysia. I backpacked through the
-          region before returning home and beginning my new life as a
+          full-stack development bootcamp in Malaysia. After backpacking through
+          the region for some time, I returned home to begin my new life as a
           professional developer.
         </p>
       </Section>
