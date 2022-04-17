@@ -20,7 +20,6 @@ export default function ThemeChanger() {
 
   return (
     <div>
-      The current theme is: {theme}
       <button onClick={changeTheme}>CHANGE THEME</button>
     </div>
   );
