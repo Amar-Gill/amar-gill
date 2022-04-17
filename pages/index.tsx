@@ -2,6 +2,22 @@ import Image from 'next/image';
 
 import photo from '../public/photo.jpg';
 
+type SectionProps = {
+  children: React.ReactNode;
+  title: string;
+};
+
+function Section({ children, title }: SectionProps) {
+  return (
+    <section className='card'>
+      <h1 className='border-slate-800 dark:border-amber-100 mb-2 text-xl border-b border-solid'>
+        {title}
+      </h1>
+      {children}
+    </section>
+  );
+}
+
 export default function Home() {
   return (
     <div className='gap-y-4 grid grid-cols-1'>
@@ -18,16 +34,13 @@ export default function Home() {
             src={photo}
             width='172px'
             height='172px'
-            className='rounded-3xl !border !border-slate-300 !border-solid'
+            className='rounded-3xl !border !border-slate-800 dark:!border-slate-300 !border-solid'
             alt='Profile Picture'
             title="That's me! And some dorky human."
           />
         </div>
       </div>
-      <div className='card'>
-        <h1 className='border-amber-100 mb-2 text-xl border-b border-solid'>
-          Bio
-        </h1>
+      <Section title='Bio'>
         <p className='mb-2'>
           I grew up in Toronto, Ontario. Being born to immigrant parents, I
           understood the value of hard work. I earned a Civil Engineering and
@@ -42,11 +55,8 @@ export default function Home() {
           region before returning home and beginning my new life as a
           professional developer.
         </p>
-      </div>
-      <div className='card'>
-        <h1 className='border-amber-100 mb-3 text-xl border-b border-solid'>
-          Work Experience
-        </h1>
+      </Section>
+      <Section title='Work Experience'>
         <div className='grid-cols-fit-3 grid content-start gap-4'>
           <div className='font-black'>2020</div>
           <div>Clearco (formerly Clearbanc)</div>
@@ -61,7 +71,7 @@ export default function Home() {
           <div>Ontario Power Generation</div>
           <div>Nuclear Engineering Intern</div>
         </div>
-      </div>
+      </Section>
     </div>
   );
 }
