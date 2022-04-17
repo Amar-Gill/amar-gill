@@ -1,6 +1,6 @@
 import { useTheme } from 'next-themes';
-import { useState, useEffect } from 'react';
-import { HiSun, HiMoon } from 'react-icons/hi';
+import { useEffect, useState } from 'react';
+import { HiMoon, HiSun } from 'react-icons/hi';
 
 export default function ThemeChanger() {
   const [mounted, setMounted] = useState(false);

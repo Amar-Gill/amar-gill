@@ -1,13 +1,13 @@
 import '../styles/globals.css';
 
 import { AppProps } from 'next/app';
+import Link from 'next/link';
+import { ThemeProvider } from 'next-themes';
 import React from 'react';
+import { GoMarkGithub } from 'react-icons/go';
 
 import AppHeader from '../components/AppHeader';
-import { ThemeProvider } from 'next-themes';
 import ThemeChanger from '../components/ThemeChanger';
-import { GoMarkGithub } from 'react-icons/go';
-import Link from 'next/link';
 
 function MainLayout({ children }: { children: React.ReactNode }) {
   return <main className='max-w-3xl px-5 mx-auto'>{children}</main>;
