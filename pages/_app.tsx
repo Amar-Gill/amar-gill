@@ -19,7 +19,10 @@ function AppNav() {
       <Link passHref href='https://github.com/Amar-Gill/amar-gill'>
         <a target='_blank' className='flex items-center'>
           <GoMarkGithub className='inline' size={20} />
-          &nbsp;Source
+          &nbsp;
+          <span className='hover:border-b border-slate-800 dark:border-amber-100'>
+            Source
+          </span>
         </a>
       </Link>
       <ThemeChanger />
