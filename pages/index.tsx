@@ -1,4 +1,7 @@
 import Image from 'next/image';
+import Link from 'next/link';
+import { FaFilePdf } from 'react-icons/fa';
+import { GoMarkGithub } from 'react-icons/go';
 
 import photo from '../public/photo.jpg';
 
@@ -28,6 +31,23 @@ export default function Home() {
         <div className='sm:text-left text-center'>
           <h1 className='text-5xl'>Amar S. Gill</h1>
           <h1 className='text-2xl'>Software Engineer</h1>
+          <div className='sm:justify-start sm:pt-2 flex items-center justify-center pt-4'>
+            <Link href='https://github.com/Amar-Gill' passHref>
+              <a target='_blank'>
+                <button className='border-slate-800 dark:border-amber-100 sm:p-1 p-2 border rounded'>
+                  <GoMarkGithub size={28} />
+                </button>
+              </a>
+            </Link>
+            <Link href='/resume.pdf' passHref>
+              <a target='_blank'>
+                <button className='dark:border-amber-100 border-slate-800 sm:p-1 p-2 ml-3 font-bold border rounded'>
+                  Resume&nbsp;
+                  <FaFilePdf size={28} className='inline' />
+                </button>
+              </a>
+            </Link>
+          </div>
         </div>
         <div className=' sm:text-right text-center'>
           <Image
