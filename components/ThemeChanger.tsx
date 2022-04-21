@@ -18,14 +18,14 @@ export default function ThemeChanger() {
 
   return resolvedTheme === 'dark' ? (
     <button
-      className='bg-amber-200 p-1 rounded'
+      className='bg-amber-200 hover:bg-amber-300 p-1 rounded'
       onClick={() => setTheme('light')}>
       {/* slate-800 */}
       <HiOutlineSun color='rgb(30 41 59 / var(--tw-bg-opacity))' size={30} />
     </button>
   ) : (
     <button
-      className='p-1 bg-indigo-600 rounded'
+      className='hover:bg-indigo-500 p-1 bg-indigo-600 rounded'
       onClick={() => setTheme('dark')}>
       {/* amber-100 */}
       <HiMoon color='rgb(254 243 199 / var(--tw-text-opacity))' size={30} />
