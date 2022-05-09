@@ -1,15 +1,15 @@
 import { Canvas } from '@react-three/fiber';
 
-import Crystal from './Crystal';
+import Monkey from './Monkey';
 
 export default function AppHeader() {
   return (
     <header className='pb-8'>
-      <div className='w-56 h-56 mx-auto'>
+      <div className='w-80 h-56 mx-auto border-2 border-red-400'>
         <Canvas>
           <ambientLight intensity={0.1} />
           <directionalLight color='white' position={[-2, 4, 6]} />
-          <Crystal />
+          <Monkey />
         </Canvas>
       </div>
     </header>
