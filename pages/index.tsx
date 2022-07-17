@@ -2,6 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { FaFilePdf } from 'react-icons/fa';
 import { GoMarkGithub } from 'react-icons/go';
+import { FiExternalLink } from 'react-icons/fi';
 
 import photo from '../public/photo.jpg';
 
@@ -92,6 +93,28 @@ export default function Home() {
           <div>Nuclear Engineering Intern</div>
         </div>
       </Section>
+      <p className='px-4 text-sm'>
+        <a
+          href='https://sketchfab.com/3d-models/data-the-monkey-a67c0e4268a047da988f6968e5103014'
+          target='_blank'
+          className='hover:underline dark:text-sky-200 text-sky-600'>
+          Data the Monkey <FiExternalLink className='inline' />
+        </a>{' '}
+        by{' '}
+        <a
+          href='https://sketchfab.com/xinus22'
+          target='_blank'
+          className='hover:underline dark:text-sky-200 text-sky-600'>
+          xinus22 <FiExternalLink className='inline' />
+        </a>{' '}
+        licensed under{' '}
+        <a
+          href='https://creativecommons.org/licenses/by/4.0/'
+          target='_blank'
+          className='hover:underline dark:text-sky-200 text-sky-600'>
+          CC BY 4.0 <FiExternalLink className='inline' />
+        </a>
+      </p>
     </div>
   );
 }
