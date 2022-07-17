@@ -26,7 +26,7 @@ export default function Home() {
   return (
     <div className='gap-y-4 grid grid-cols-1'>
       <div className='card sm:text-lg mb-4 text-center'>
-        Hello, I&apos;m a full-stack developer based out of Toronto!
+        Hello, I&apos;m a full-stack developer based out of Toronto! &#127809;
       </div>
       <div className='sm:grid-cols-2 grid grid-cols-1 gap-4 font-bold'>
         <div className='sm:text-left text-center'>
