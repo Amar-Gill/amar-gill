@@ -6,7 +6,7 @@ import Monkey from './Monkey';
 export default function AppHeader() {
   return (
     <header className='pb-8'>
-      <div className='w-80 h-56 mx-auto border-2 border-red-400'>
+      <div className='w-96 h-64 mx-auto'>
         <Canvas>
           <OrbitControls />
           <ambientLight intensity={0.1} />
