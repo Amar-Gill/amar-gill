@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { FaFilePdf } from 'react-icons/fa';
+import { FiExternalLink } from 'react-icons/fi';
 import { GoMarkGithub } from 'react-icons/go';
 
 import photo from '../public/photo.jpg';
@@ -25,7 +26,7 @@ export default function Home() {
   return (
     <div className='gap-y-4 grid grid-cols-1'>
       <div className='card sm:text-lg mb-4 text-center'>
-        Hello, I&apos;m a full-stack developer based out of Toronto!
+        Hello, I&apos;m a full-stack developer based out of Toronto! &#127809;
       </div>
       <div className='sm:grid-cols-2 grid grid-cols-1 gap-4 font-bold'>
         <div className='sm:text-left text-center'>
@@ -92,6 +93,31 @@ export default function Home() {
           <div>Nuclear Engineering Intern</div>
         </div>
       </Section>
+      <p className='px-4 text-sm'>
+        <a
+          href='https://sketchfab.com/3d-models/data-the-monkey-a67c0e4268a047da988f6968e5103014'
+          target='_blank'
+          className='hover:underline dark:text-sky-200 text-sky-600'
+          rel='noreferrer'>
+          Data the Monkey <FiExternalLink className='inline' />
+        </a>{' '}
+        by{' '}
+        <a
+          href='https://sketchfab.com/xinus22'
+          target='_blank'
+          className='hover:underline dark:text-sky-200 text-sky-600'
+          rel='noreferrer'>
+          xinus22 <FiExternalLink className='inline' />
+        </a>{' '}
+        licensed under{' '}
+        <a
+          href='https://creativecommons.org/licenses/by/4.0/'
+          target='_blank'
+          className='hover:underline dark:text-sky-200 text-sky-600'
+          rel='noreferrer'>
+          CC BY 4.0 <FiExternalLink className='inline' />
+        </a>
+      </p>
     </div>
   );
 }
